@@ -1,0 +1,79 @@
+.add-food-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.add-food-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.add-food-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-food-form input,
+.add-food-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s ease-in-out;
+}
+
+.add-food-form input:focus,
+.add-food-form textarea:focus {
+    border-color: #ff5722;
+    outline: none;
+}
+
+.add-food-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.add-food-form input[type="file"] {
+    border: none;
+}
+
+.add-food-form button {
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.add-food-form button:hover {
+    background-color: #e64a19;
+}
+
+@media (max-width: 600px) {
+    .add-food-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .add-food-form input,
+    .add-food-form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .add-food-form button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

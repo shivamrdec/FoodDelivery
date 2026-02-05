@@ -1,0 +1,41 @@
+.add-restaurant-container {
+  background-image: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chanwalrus-958545.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-restaurant-container .shadow {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.add-restaurant-container h2 {
+  color: #d9534f;
+}
+
+.add-restaurant-container .form-control {
+  border-radius: 5px;
+}
+
+.add-restaurant-container .btn-danger {
+  background-color: #d9534f;
+  border: none;
+}
+
+.add-restaurant-container .btn-danger:hover {
+  background-color: #c9302c;
+}
+
+.add-restaurant-container .btn-secondary {
+  background-color: #5bc0de;
+  border: none;
+}
+
+.add-restaurant-container .btn-secondary:hover {
+  background-color: #31b0d5;
+}

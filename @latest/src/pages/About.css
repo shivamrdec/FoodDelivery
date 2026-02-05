@@ -1,0 +1,35 @@
+.about-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .about-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chanwalrus-958545.jpg&fm=jpg");
+    filter: blur(8px);
+    z-index: -1;
+  }
+  
+  .about-content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .brand-name {
+    color: #d9534f;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  

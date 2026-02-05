@@ -1,0 +1,97 @@
+/* General Container */
+.list {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .list p {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    
+  }
+  
+  /* Table Container */
+  .list-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 100px;
+  }
+  
+  /* Table Header */
+  .list-table-format.title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr; /* Adjusted for new "Description" field */
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+  }
+  
+  /* Table Rows */
+  .list-table-format {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr; /* Same as header */
+    align-items: center;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .list-table-format:hover {
+    background-color: #e6e6e6;
+  }
+  
+  /* Images */
+  .list-table-format img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  /* Text Fields */
+  .list-table-format p {
+    font-size: 15px;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Loading & Empty States */
+  .list p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .list {
+      width: 95%;
+    }
+  
+    .list-table-format.title,
+    .list-table-format {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .list-table-format p {
+      font-size: 14px;
+    }
+  }
+  

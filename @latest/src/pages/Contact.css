@@ -1,0 +1,83 @@
+/* Apply background image with blur effect */
+.contact-page {
+  position: relative;
+  min-height: 100vh;
+  background: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chanwalrus-958545.jpg&fm=jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.contact-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  backdrop-filter: blur(8px); /* Blur effect */
+}
+
+/* Main container */
+.contact-container {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 800px;
+}
+
+/* Headers */
+h2, h3, h4 {
+  color: #d9534f; /* Red theme color */
+  text-align: center;
+}
+
+/* Contact details */
+p {
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  display: block;
+   /* width: 50%; */
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Form */
+.form-group label {
+  font-weight: bold;
+  color: #555;
+}
+
+.form-control {
+  border-radius: 8px;
+}
+
+/* Checkbox */
+ /* .form-check {
+  text-align: center;
+}  */
+
+/* Download App Button */
+.text-center button {
+  background-color: #000;
+  border: none;
+}
+
+.text-center button:hover {
+  background-color: #333;
+}
+
+
+
+

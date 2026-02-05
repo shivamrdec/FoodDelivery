@@ -1,0 +1,33 @@
+/* Full-screen container */
+.signup-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Background with blur effect */
+  .signup-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chanwalrus-958545.jpg&fm=jpg");
+    background-size: cover;
+    z-index: -1; /* Pushes it behind the form */
+  }
+
+  /* Signup form (remains clear) */
+  .signup-form {
+    background: rgba(255, 255, 255, 0.9); /* Light white background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    position: relative; /* Ensures form is on top */
+    z-index: 1; /* Brings form above the blurred background */
+  }
+  
